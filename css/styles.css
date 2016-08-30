@@ -1,0 +1,228 @@
+/**************************
+
+GENERAL SECTION
+Styles for all general properties
+
+***************************/
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: #384047;
+  margin: 0;
+}
+
+
+h1 {
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+
+.footerText {
+  text-align: center;
+  font-style: italic;
+  color: #817F8B
+}
+
+
+/**************************
+
+HEADER SECTION
+Styles for header properties
+
+***************************/
+
+.heading {
+  background-color: #282437;
+  color: white;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.heading h1{
+  padding: 25px;
+  font-size: 20px;
+}
+
+.container {
+  text-align: center;
+}
+
+.container h2 {
+  font-size: 20px;
+}
+
+.container p {
+  color: #817F8B;
+  margin-bottom: 30px;
+}
+
+.head-border {
+  border-bottom: 5px solid black;
+  max-width: 270px;
+  margin: 0 auto;
+}
+
+.second-border {
+  border-bottom: 2px solid black;
+  max-width: 270px;
+  margin: 0 auto;
+  margin-top: 3px;
+  margin-bottom: 30px;
+}
+
+.third-border {
+  border-bottom: 2px solid black;
+  max-width: 270px;
+  margin: 0 auto;
+}
+
+
+
+
+
+/**************************
+
+FORM SECTION
+Styles for form properties
+
+***************************/
+form {
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #f4f7f8;
+  border-radius: 8px;
+}
+
+input[type="text"],
+/*input[type="password"],
+input[type="date"],
+input[type="datetime"],*/
+input[type="email"],
+/*input[type="number"],
+input[type="search"],*/
+input[type="tel"],
+/*input[type="time"],
+input[type="url"],*/
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  font-size: 16px;
+  margin: 0 4px 8px 0;
+}
+
+input[checkbox],
+.inLabel {
+  display: inline-block;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border: 3px inset #4bc970;
+}
+
+
+select {
+  padding: 6px;
+  height: 32px;
+  border-radius: 2px;
+}
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #4bc970;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #3ac162;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+}
+
+fieldset {
+
+  margin-bottom: 30px;
+  border: none;
+}
+
+legend {
+  width: 100%;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+#zip {
+  width: 150px;
+}
+
+
+/**************************
+
+MEDIA QUERY SECTION
+Styles for media queries
+
+***************************/
+
+
+@media screen and (min-width: 760px) {
+
+  form {
+    max-width: 760px;
+  }
+
+  .head-border, .second-border, .third-border {
+  max-width: 740px;
+}
+
+.top-section label {
+  display: inline-block;
+  width: 125px;
+}
+
+.top-section #name, 
+.top-section #email, 
+.top-section #number, 
+.top-section #address,
+.top-section #city, 
+.top-section #state {
+display: inline;
+width: 561px;
+}
+
+.top-section #zip {
+display: inline;
+}
+
+}
